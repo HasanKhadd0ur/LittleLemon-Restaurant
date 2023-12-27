@@ -1,0 +1,163 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+
+}
+.bg-c{
+  color: var(--primary-color);
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Markazi Text', serif;
+}
+
+:root {
+  --secondary-color: #F4CE14;
+  --primary-color: #495E57;
+  --terciary-color:#ee9972;
+  --higlight-color-1: #edefee;
+  --black-color:#333;
+}
+body{
+  font-family: 'Karla', sans-serif;
+}
+main{
+  margin: auto 2rem;
+}
+
+/*about */
+.brd-l{
+    
+  padding-left: 17px;
+  border-left: 3px solid var(--primary-color);
+}
+
+/*HERO SECTION*/
+.hero{
+  color: white;
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.3rem 0.6rem;
+  justify-content: space-evenly;
+}
+
+.hero div{
+  display: flex;
+  flex-direction: column;
+  max-width:50%;
+  justify-content: space-around;
+}
+
+
+
+.hero h1{
+  color: var(--secondary-color);
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.6rem;
+}
+.hero h3{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  font-family: 'Karla';
+}
+
+.hero-image{
+  width: 50%;
+  max-width: 20rem;
+  border-radius: 10px;
+}
+.hero-button:link,.hero-button:visited{
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  display: block;
+  padding: 0.4rem 0.9rem;
+  color:black;
+  max-width: 150px;
+  text-align: center;
+
+}
+
+.hero-button:active,.hero-button:hover{
+  filter: brightness(40%);
+}
+
+
+/* SPECIALS SECTION*/
+
+.specials {
+  text-align: center;
+  max-width: 80%;
+  display: block;
+  
+  margin:auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.cards{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  gap: 10px;
+  justify-content: start  ;
+}
+
+/*card*/
+
+/**FOOTER */
+
+/*FORM*/
+
+.reservation-form{
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  display: grid;
+  max-width: 50%; 
+  gap: 20px;
+  border: 2px solid var(--higlight-color-1);
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.2);
+
+  padding: 2rem 4rem;
+}
+
+.reservation-form label{
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.2);
+  width: 40%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  margin: auto;
+}
+
+.reservation-form input,.reservation-form select  {
+  font-size: 1.1rem;
+  width: 40%;
+  margin: auto;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+
+.error{
+  margin-top: -3rem;
+  text-align: center;
+  /* background-color: red; */
+  color: red;
+  font-weight: bolder;
+}
