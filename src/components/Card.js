@@ -1,7 +1,7 @@
 import './Card.css';
 import React from 'react';
 import icon from '../assets/Dish icon.svg'
-
+import { BiDish } from "react-icons/bi";
 const Card = ({img,dish}) => {
     return (
         <div className='card'>
@@ -19,10 +19,10 @@ const Card = ({img,dish}) => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit nesciunt tempore placeat ut vel aperiam esse adipisci, ea praesentium eius, similique fuga doloribus autem? Sequi dolor suscipit tempora similique!
             </div>
             <a href='/order-online' className='card-link'>
-                <span>
+                <span >
                 Order a delivery 
+                <BiDish/>
                 </span>
-            <img src = {icon} alt="icon" className='card-link-icon' />
              </a>
         </div>
     );

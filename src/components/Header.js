@@ -8,8 +8,11 @@ import { RiQuestionLine } from "react-icons/ri";
 import { MdAddCard } from "react-icons/md";
 import { BiSolidBookAdd } from "react-icons/bi";
 import { FaInfo } from "react-icons/fa";
-import { TiInfoLarge } from "react-icons/ti";
 
+import {ThemeContext} from '../Theme';
+import {useContext}from 'react';
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 export const Header = () => {
   const NavItem =[
               {name:'Home',link:"/",elem:<TiHome/>},
@@ -19,7 +22,8 @@ export const Header = () => {
               {name:'Order Online',link:"/order-online",elem:<MdAddCard/>}
             ]
 
-            
+            const { theme,toggleTheme} = useContext(ThemeContext);
+
   return (
     <header className='header bg-c'>
 
@@ -28,6 +32,8 @@ export const Header = () => {
     <nav className='nav'>
       <ul>
       {NavItem.map(item=><li><a href={item.link}> {item.elem} {item.name}</a></li>)}
+      <li className='bg-l' onClick={()=>toggleTheme()}><a href='#'>{theme ==="dark-theme" ? <MdLightMode /> : <MdDarkMode />}</a></li>
+    
       </ul>
     </nav>
   </header>

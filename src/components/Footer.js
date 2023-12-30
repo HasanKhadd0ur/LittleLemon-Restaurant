@@ -24,12 +24,12 @@ export const Footer = () => {
                       {elem:<TiSocialYoutube />,name:"Youtube",link:"www.Youtube.com"} ,
                       {elem:<TiSocialInstagram />,name:"Instagram",link:"www.Instagram.com"},
                       {elem:<TiSocialTwitter />,name:"Twitter",link:"www.Tiktok.com"}
-                    ]
-  
+                    ];
   
   return (
     <footer className='footer'>
-      <div style={{backgroundColor:"white",marginTop:"40px",borderRadius:"5px", padding:"0.2rem 0.6rem"}}>
+
+      <div style={{backgroundColor:"white",marginTop:"40px",borderRadius:"5px", padding:"0.2rem 0.6rem"}} >
         <img src={Logo} alt="Little lemon logo" width={"200rem"}/>
       </div>
       <nav className="footer-nav">
@@ -43,7 +43,7 @@ export const Footer = () => {
 
       <div className='footer-contact'>
         <h2><TbBracketsContain /> Contact us</h2>
-        <address>local 109</address>
+        <a href='fff'>local 109</a>
         <a href="tel:123-456-7890">123-456-7890</a>
         <a href = "mailto: abc@example.com">Send Email</a>
       </div>

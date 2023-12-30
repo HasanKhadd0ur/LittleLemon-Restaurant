@@ -19,12 +19,23 @@ h1,h2,h3,h4,h5,h6{
 :root {
   --secondary-color: #F4CE14;
   --primary-color: #495E57;
-  --terciary-color:#ee9972;
-  --higlight-color-1: #edefee;
+  --primary-text-color:#495E57;
+  --secondary-text-color:#F4CE14 ;
+  --terciary-color:#efccbc;
+
+
+  --footer-primary-color:#495E57;
+  --footer-text-pcolor:#495E57;
+  --footer-secodary-color:#F4CE14;
+  --footer-text-scolor:#F4CE14;
+  
+  --important-text:#920c0c;
+  --higlight-color: #edefee;
   --black-color:#333;
 }
 body{
   font-family: 'Karla', sans-serif;
+  background-color: var(--terciary-color);
 }
 main{
   margin: auto 2rem;
@@ -43,6 +54,7 @@ main{
   margin-top: 1rem;
   background-color: var(--primary-color);
   display: flex;
+  gap: 10px;;
   flex-wrap: wrap;
   padding: 0.3rem 0.6rem;
   justify-content: space-evenly;
@@ -51,8 +63,10 @@ main{
 .hero div{
   display: flex;
   flex-direction: column;
-  max-width:50%;
-  justify-content: space-around;
+  gap: 10px;;
+  flex-wrap: wrap;
+  max-width:60%;
+  justify-content: space-evenly;
 }
 
 
@@ -73,7 +87,8 @@ main{
 }
 
 .hero-image{
-  width: 50%;
+ /* width: 50%;
+  */
   max-width: 20rem;
   border-radius: 10px;
 }

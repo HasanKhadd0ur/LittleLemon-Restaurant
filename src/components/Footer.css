@@ -1,9 +1,9 @@
 
 .footer{
     display: flex;
-    color: var(--higlight-color-1);
+    color: var(--footer-text-pcolor);
     width: 100%;
-    background-color:var(--primary-color);
+    background-color:var(--footer-primary-color);
     align-items: start;
     justify-content: space-around;
   }
@@ -17,7 +17,7 @@
   .footer h2 {
     margin-bottom: 1.5rem;
     margin-top: 0.8rem;
-    color: var(--secondary-color);
+    color: var(--footer-text-scolor);
   }
   .footer-contact{
     display: flex;
@@ -42,7 +42,7 @@
   
   .footer a:link, .footer a:visited{
     /* color:black; */
-    color: var(--higlight-color-1);
+    color: var(--higlight-color);
     padding: 0.4rem 0.2rem;
     /* background-color: red; */
     display: inline-block;

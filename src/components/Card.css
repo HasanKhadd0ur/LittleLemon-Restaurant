@@ -31,7 +31,7 @@
   }
   
   .price{
-    color:var(--terciary-color);
+    color:var(--important-text);
     font-weight: bolder;
   }
   

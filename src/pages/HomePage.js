@@ -4,7 +4,7 @@ import salad from '../assets/greek salad.jpg'
 import Card from '../components/Card'
 
 export const HomePage = () => {
-  const cards= [{title:"greek salad",price:10},{title:"greek salad",price:20},{title:"greek salad",price:30}];
+  const cards= [{title:"greek salad",price:10},{title:"g salad",price:13},{title:"s salad",price:14},{title:"greek salad",price:20},{title:"greek salad",price:30}];
   return (
     <>
         <section>
